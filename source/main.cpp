@@ -1,5 +1,6 @@
 #include <raylib.h>
 #include "grid.h"
+#include "blocks.cpp"
 
 
 int main() 
@@ -17,11 +18,14 @@ grid.grid[0][5]=5;
 grid.grid[0][6]=6;
 grid.grid[0][7]=7;*/
 grid.print();
+LBlock block = LBlock();
+
 
 while(WindowShouldClose()== false){
     BeginDrawing();
     ClearBackground(DBlue);
     grid.draw();
+    block.draw();
     EndDrawing();
 }
 CloseWindow();
