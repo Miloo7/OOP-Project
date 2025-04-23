@@ -16,6 +16,6 @@ class Grid{
         int colN;//num of cols
         int cSize;//cell size in pixels
         std::vector<Color> colors;
-        std::vector<Color> GetCColors();
+
         
 };
